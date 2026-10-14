@@ -1361,20 +1361,8 @@
     .locals 2
 
     .line 849
-    const-string v0, "wfc_ims_mdn"
-
-    iget-object v1, p0, Lorg/codeaurora/ims/ImsConfigImpl;->mContext:Landroid/content/Context;
-
-    invoke-virtual {p0, p1, v0, v1}, Lorg/codeaurora/ims/ImsConfigImpl;->getSubscriptionProperty(ILjava/lang/String;Landroid/content/Context;)Ljava/lang/String;
-
-    move-result-object p0
-
-    if-nez p0, :cond_0
-
-    .line 851
     const-string p0, "0"
 
-    :cond_0
     return-object p0
 .end method
 
