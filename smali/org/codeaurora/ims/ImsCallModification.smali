@@ -208,7 +208,7 @@
 .end method
 
 .method public constructor <init>(Lorg/codeaurora/ims/ImsCallSessionImpl;Landroid/content/Context;Lorg/codeaurora/ims/ImsSenderRxr;Landroid/os/Looper;)V
-    .locals 3
+    .locals 4
 
     .line 136
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -342,7 +342,9 @@
     .line 149
     iget-object p2, p0, Lorg/codeaurora/ims/ImsCallModification;->mContext:Landroid/content/Context;
 
-    invoke-virtual {p2, v0, p1}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    const/4 v1, 0x2
+
+    invoke-virtual {p2, v0, p1, v1}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;I)Landroid/content/Intent;
 
     .line 150
     const-string p1, "Registering car mode receiver"
