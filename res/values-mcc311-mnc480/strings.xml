@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_vzw_call_filter_package">com.vzw.ecid</string>
+</resources>

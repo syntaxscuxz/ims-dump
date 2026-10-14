@@ -1,0 +1,22 @@
+version: 3.0.3
+apkFileName: ims.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 37
+  targetSdkVersion: 36
+versionInfo:
+  versionCode: 1
+  versionName: 1.0
+resourcesInfo:
+  packageId: 127
+  sparseEntries: true
+  compactEntries: true
+doNotCompress:
+- arsc
+- dex
+- png
+- res/drawable-hdpi/volte_icon
+- res/drawable-mdpi/volte_icon
+- res/drawable-xhdpi/volte_icon
